@@ -199,7 +199,7 @@ trait HasTranslations
 
     public function getTranslatableAttributes(): array
     {
-        return array_keys($this->translatableFields);
+        return $this->translatableFields;
     }
 
     public function getTranslationsAttribute(): array
